@@ -8,6 +8,12 @@
     --blanco: #ffffff;
     --negro: #000000;
     --celeste: #38b3d8;
+    --verde_transparente : rgba(255, 255, 255, 0.05);
+    --verde_input:rgba(0, 0, 0, 0.3);
+    --gold: rgba(255, 215, 0);
+    --titulo: rgba(92, 181, 175 ,0.8);
+    --titulo_producto: rgb(1, 118, 197);
+   
 }
 html {
     box-sizing: border-box;
@@ -21,7 +27,13 @@ body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
-    background-color:rgba(56, 144, 175, 0.7) ;
+   /* background-color: #167282;*/
+   /* background-color:rgba(92, 181, 175) ;*/
+}
+
+
+.eslogan{
+    background-color: #167282;
 }
 
 /** Globales **/
@@ -31,6 +43,10 @@ body {
 
 }
 
+.letra{
+    font-family: var(--fuenteHeading);
+}
+
 .mayuscula{
     text-transform: uppercase;
 }
@@ -38,6 +54,7 @@ a {
     text-decoration: none;
 }
 h1, h2, h3, h4 {
+    color: var(--blanco);
     font-family: var(--fuenteHeading);
     line-height: 1.2;
 }
@@ -61,6 +78,34 @@ img {
     
     
 }
+.color_titulo{
+    color: var(--blanco);
+}
+
+.titulo_alternativo{
+    text-decoration: none;
+    max-width: 250rem;
+    padding: .5em;
+    padding-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.titulo {
+    text-decoration: none;
+    max-width: 250rem;
+    padding: .5em;
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.titulo_producto {
+    
+    max-width: 100%;
+    background-color: var(--primarioOscuro);
+    padding: .5em;
+    border-radius: 2rem;
+}
 /** Utilidades **/
 .no-margin {
     margin: 0;
@@ -72,21 +117,12 @@ img {
     text-align: center;
 }
 
-/** Header **/
-.webp .header {
-    
-    
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(27, 55, 65, 0.7)),url(../img/cafe-1.webp);
-}
-.no-webp .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba( 27, 55, 65, 0.7)),url(../img/cafe-1.jpg);
-}
 .header {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba( 27, 55, 65, 0.7)),url(../img/cafe-1.jpg);
 }
 
 
@@ -168,7 +204,14 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
-    border: none;
+    border: .1rem solid var(--blanco);
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -181,7 +224,7 @@ img {
     cursor: pointer;
 }
 .boton--primario {
-    background-color: var(--negro);
+    background-color: var(--primarioOscuro);
 }
 .boton--secundario {
     background-color: var(--primario);
@@ -216,35 +259,49 @@ img {
 
 /** Contacto **/
 .contacto-bg {
-    background-image: url(../img/contacto.jpg);
-    height: 40rem;
+    
+    background-image: linear-gradient(rgba(22, 114, 130,0.4),rgba(0, 0, 0,0.5)),url(../img/prueba.webp);
+    height: 60rem; 
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .formulario {
-    background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
+    margin: -55rem auto 0 auto;
     width: 95%;
     padding: 5rem;
+
 }
 .campo {
+    font-size: 2.3rem;
+    color: var(--celeste);
+    font-family: var(--fuenteParrafos);
     display: flex;
     margin-bottom: 2rem;
 }
 .campo__label {
+    font-size: 2.3rem;
     flex: 0 0 9rem;
     text-align: right;
     padding-right: 2rem;
 }
 .campo__field {
+    font-size: 2.3rem;
+    color: var(--blanco);
+    font-family: var(--fuenteParrafos);
+    background-color: var(--verde_transparente);
     flex: 1;
-    border: 1px solid var(--gris);
+    border: 1px solid var(--blanco);
 }
 .campo__field--textarea {
     height: 20rem;
 }
 
+textarea:focus, input:focus, input[type]:focus {
+    border-color: var(--celeste);
+    box-shadow: 0 1px 1px rgba(12, 202, 205, 0.075);
+    outline: 0 none;
+}
 
 .avellana{
     
@@ -353,79 +410,6 @@ img {
     }
 }
 
-/*
-.modal-window {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.25);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s;
-
-  }
-
-
-  .modal-window:target {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .modal-window .modal-window:target > div {
-    width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2em;
-    background: white;
-  }
-  
-  .modal-close {
-    color: #aaa;
-    line-height: 50px;
-    font-size: 80%;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 70px;
-    text-decoration: none;
-   
-  }
-  .modal-close:hover {
-    color: black;
-  }
-
-  .modal-window > div {
-      border-radius: 1rem;
-    }
-  
-  
-  .modal-window div:not(:last-of-type) {
-    margin-bottom: 15px;
-  }
-  
-  small {
-    color: lightgray;
-  }
-  
-  .btn {
-    background-color: white;
-    padding: 1em 1.5em;
-    border-radius: 1rem;
-    text-decoration: none;
-    
-  }
-
-
-  .btn i{
-     padding-right: 0.3em; 
-  }*/
 
 
 
@@ -493,3 +477,7 @@ img {
     max-height: 70rem;
     overflow-y: scroll;
 }
+
+
+
+

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,62 +24,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header ">
-        <div class="contenedor">
-            <div class="barra">
-                <a class="logo" href="index.html" src="img/logo.png" alt="logo café Avellana">
-                    
-                    <h1 class="logo__bold no-margin centrar-texto">Avellana <span class="logo__nombre">Coffee Store</span></h1>
-                </a>
-
-                <nav id="navegacion" class="navegacion">
-                    <a href="#producto" class="navegacion__enlace">Productos</a>
-                    <a href="#accesorio" class="navegacion__enlace">Accesorios</a>
-                    <a href="#contacto" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
-        </div>
+    <div class="eslogan">
         
-        <div class="header__texto">
-            <img  class=" img  avellana" src="img/logo.png" alt="..." />
-            <h2 class="no-margin mayuscula">¿tomemos un café?</h2>
-            <p class="no-margin mayuscula">Experiencias y Sabores del Mundo en la Zona Sur</p>
+        <?php require 'includes/funciones.php'; incluirTemplate('header'); ?>
+
+        <div class= "titulo_alternativo centrar-texto" >
+            <h1 class="logo__bold no-margin centrar-texto mayuscula ">Atrévete <span class="letra no-margin mayuscula">a vivir la experiencia de un buen café.</span></h1>
+
         </div>
-    </header>
-       
-<!--<div class="contenedor contenido-principal">
-        <main class="blog">
-            <h3>Nuestro Blog</h3>
-
-        
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="img/blog3.webp" type="image/webp">
-                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog"> 
-                    </picture>
-                </div>
-
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Beneficios del Café</h4>
-                    <p>Siempre es un buen momento para un café, para iniciar un nuevo día, compartir un buen momento con nuestros seres queridos, vencer la carga laboral del trabajo,  finalizar una buena comida o simplemente porque se nos apetece, pero el café va mucho mas allá, cada taza al día nos proporciona una cantidad de beneficios …</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
-                </div>
-            </article>
-        </main>
-      
-    </div>-->
-    <main id ="producto" class="contenedor">
-        <h2>Nuestros Productos</h2>
-        <h3>Atrévete a vivir la experiencia de un buen café. </h3>
-      <h4>Tipos de Café</h1>
+        <div>
+            <h2 class=" titulo centrar-texto mayuscula" >nuestros productos</h2>
+        </div>
+    </div>
+    <main id ="producto" class="contenedor">    
+       <h2 class="titulo centrar-texto mayuscula" >Tipos de Café</h2> 
       <div class="grid">
-
+                     
             <div class="producto">
-                <a href="#cafecolombia">
+                <a href="#cafecolombia" rel="noopener">
                     <img class=" imag producto__imagen" src="img/cafe_bolsa_1.jpeg" alt="imagen café Avellana colombia ">
                     <div class="producto__informacion">
-                        <p class="producto__nombre"><a href="#cafecolombia" >Colombia</a></p>  
+                        <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#cafecolombia" >Colombia</a></p>  
                     </div> 
                     <div class="informacion" id="cafecolombia">
                         <div class="informacion-inner scroll">
@@ -88,7 +54,7 @@
                                 Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
                                 Cosechado entre 1800 y 2000 msnm.
                             </p>
-                            <a href="index.html#producto" class="button">cerrar</a>
+                            <a href="index.php#producto" class="button">cerrar</a>
                         </div>
                     </div>   
                 </a>
@@ -98,7 +64,7 @@
                 <a href="#caferuanda">
                     <img class=" imag producto__imagen" src="img/cafe_bolsa_2.jpeg" alt="imagen café Avellana ruanda ">
                     <div class="producto__informacion">
-                        <p class="producto__nombre"><a href="#caferuanda" >Ruanda</a></p>  
+                        <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#caferuanda" >Ruanda</a></p>  
                     </div> 
                     <div class="informacion" id="caferuanda">
                         <div class="informacion-inner scroll">
@@ -107,7 +73,7 @@
                             <p>
                                 Café de grano en formato 250 grs, Con notas de sabor a té negro.cosechado entre 1650 y 1805 msnm.
                             </p>
-                            <a href="index.html#producto" class="button">cerrar</a>
+                            <a href="index.php#producto" class="button">cerrar</a>
                         </div>
                     </div>   
                 </a>
@@ -116,7 +82,7 @@
                 <a href="#cafeguatemala">
                     <img class=" imag producto__imagen" src="img/cafe_bolsa_3.jpeg" alt="imagen café Avellana guatemala ">
                     <div class="producto__informacion">
-                        <p class="producto__nombre"><a href="#cafeguatemala" >Guatemala</a></p>  
+                        <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#cafeguatemala" >Guatemala</a></p>  
                     </div> 
                     <div class="informacion" id="cafeguatemala">
                         <div class="informacion-inner scroll">
@@ -125,7 +91,7 @@
                             <p>
                                 Café en grano en formato de 250 grs., con notas de sabor a caramelo, ciruela, chocolate amargo. Cosechado a 1380 msnm.
                             </p>
-                            <a href="index.html#producto" class="button">cerrar</a>
+                            <a href="index.php#producto" class="button">cerrar</a>
                         </div>
                     </div>   
                 </a>
@@ -134,13 +100,13 @@
     </main>
 
     <section id ="accesorio" class="contenedor">
-        <h4>Accesorios</h1>
+            <h2 class="titulo centrar-texto mayuscula">Accesorios</h2>
             <div class="grid">
                 <div class="producto">
                     <a href="#cafeteras">
                         <img class=" imag producto__imagen" src="img/cafetera_1.jpeg" alt="imagen Accesorios Avellana ">
                         <div class="producto__informacion">
-                            <p class="producto__nombre"><a href="#cafeteras" >Cafeteras</a></p>  
+                            <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#cafeteras" >Cafeteras</a></p>  
                         </div> 
                         <div class="informacion" id="cafeteras">
                             <div class="informacion-inner scroll">
@@ -155,7 +121,7 @@
                                     Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
                                     Cosechado entre 1800 y 2000 msnm.
                                 </p>
-                                <a href="index.html#accesorio" class="button">cerrar</a>
+                                <a href="index.php#accesorio" class="button">cerrar</a>
                             </div>
                             
                         </div>   
@@ -165,7 +131,7 @@
                     <a href="#prensas">
                         <img class=" imag producto__imagen" src="img/prensa_1.jpeg" alt="imagen Accesorios Avellana ">
                         <div class="producto__informacion">
-                            <p class="producto__nombre"><a href="#prensas" >Prensas</a></p>  
+                            <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#prensas" >Prensas</a></p>  
                         </div> 
                         <div class="informacion" id="prensas">
                             <div class="informacion-inner scroll">
@@ -180,7 +146,7 @@
                                     Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
                                     Cosechado entre 1800 y 2000 msnm.
                                 </p>
-                                <a href="index.html#accesorio" class="button">cerrar</a>
+                                <a href="index.php#accesorio" class="button">cerrar</a>
                             </div>
                             
                         </div>   
@@ -190,7 +156,7 @@
                     <a href="#shakers">
                         <img class=" imag producto__imagen" src="img/shaker_1.jpeg" alt="imagen Accesorios Avellana ">
                         <div class="producto__informacion">
-                            <p class="producto__nombre"><a href="#shakers" >Shakers</a></p>  
+                            <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#shakers" >Shakers</a></p>  
                         </div> 
                         <div class="informacion" id="shakers">
                             <div class="informacion-inner scroll">
@@ -201,7 +167,7 @@
                                     Cosechado entre 1800 y 2000 msnm.
                                 </p>
                                 
-                                <a href="index.html#accesorio" class="button">cerrar</a>
+                                <a href="index.php#accesorio" class="button">cerrar</a>
                             </div>
                             
                         </div>   
@@ -211,7 +177,7 @@
                         <a href="#moledor">
                             <img class=" imag producto__imagen" src="img/moledor.jpeg" alt="imagen Accesorios Avellana ">
                             <div class="producto__informacion">
-                                <p class="producto__nombre"><a href="#moledor" >Moledores</a></p>  
+                                <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#moledor" >Moledores</a></p>  
                             </div> 
                             <div class="informacion" id="moledor">
                                 <div class="informacion-inner scroll">
@@ -222,7 +188,7 @@
                                         Cosechado entre 1800 y 2000 msnm.
                                     </p>
                                     
-                                    <a href="index.html#accesorio" class="button">cerrar</a>
+                                    <a href="index.php#accesorio" class="button">cerrar</a>
                                 </div>
                                 
                             </div>   
@@ -232,7 +198,7 @@
                         <a href="#tetera">
                             <img class=" imag producto__imagen" src="img/tetera_1.jpeg" alt="imagen Accesorios Avellana ">
                             <div class="producto__informacion">
-                                <p class="producto__nombre"><a href="#tetera" >Teteras</a></p>  
+                                <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#tetera" >Teteras</a></p>  
                             </div> 
                             <div class="informacion" id="tetera">
                                 <div class="informacion-inner scroll">
@@ -243,7 +209,7 @@
                                         Cosechado entre 1800 y 2000 msnm.
                                     </p>
                                     
-                                    <a href="index.html#accesorio" class="button">cerrar</a>
+                                    <a href="index.php#accesorio" class="button">cerrar</a>
                                 </div>
                                 
                             </div>   
@@ -251,76 +217,55 @@
                     </div><!--.accesorio-->
              </div>
     </section>
-
-    <section id="contacto" class="contenedor">
-        <h3 class="centrar-texto">Contacto</h3>
     
+    <div>
+        <h2 class="titulo centrar-texto mayuscula">Contáctanos</h2>  
+    </div>
+
+   <section id="contacto" class="contenedor">   
         <div class="contacto-bg"></div>
     
-        <form class="formulario">
+        <form class="formulario" action="correos.php" method="POST" autocomplete="off">
             <div class="campo">
-                <label class="campo__label" for="nombre">Nombre</label>
+                <label class="titulo_alternativo color_titulo campo__label"  for="nombre">Nombre</label>
                 <input 
-                    class="campo__field"
                     type="text" 
-                    placeholder="Tu Nombre" 
+                    class="campo__field titulo_alternativo "
                     id="nombre"
+                    name = "nombre" 
+                    placeholder="Tu Nombre" 
+                    required 
+
                 >
             </div>
             <div class="campo">
-                <label class="campo__label" for="email">E-mail</label>
+                <label class="titulo_alternativo color_titulo  campo__label" for="email">E-mail</label>
                 <input 
-                    class="campo__field"
                     type="email" 
-                    placeholder="Tu E-mail" 
+                    class="campo__field titulo_alternativo "
                     id="email"
+                    name="email"
+                    placeholder="Tu E-mail" 
+                    required
                 >
             </div>
             <div class="campo">
-                <label class="campo__label" for="mensaje">Mensaje</label>
+                <label class="titulo_alternativo color_titulo campo__label" for="mensaje">Mensaje</label>
                 <textarea 
-                    class="campo__field campo__field--textarea"
+                    class="campo__field campo__field--textarea titulo_alternativo  "
+                    name="mensaje"
                     id="mensaje"
+                    required
                 ></textarea>
             </div>
     
             <div class="campo">
-                <input type="submit" value="Enviar" class="boton boton--primario">
+                <button type="submit" name = " submit" value="Enviar" class="boton boton--primario">enviar</button>
             </div>
         </form>
-    
-        
     </section>
+   
+<?php  incluirTemplate('footer'); ?>
     
-
-    <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-               
-                <a class="logo" href="index.html">
-                    
-                    <h1 class="logo__bold no-margin centrar-texto">Avellana<span class="logo__nombre"> Coffee Store</span></h1>                  
-                </a>
-                
-                <nav class="navegacion">
-                    <a href="#producto" class="navegacion__enlace">Productos</a>
-                    <a href="#accesorio" class="navegacion__enlace">Accesorios</a>
-                    <a href="#contacto" class="navegacion__enlace">Contacto</a>
-                </nav>
-            </div>
-        </div>
-        <div class="centrar">
-            <a  class= " logo " href="mailto:jorge.weisser1401@gmail.com?Subject=Sobre%20sus%20servicios" target="_blank"><img  class="redes"src="img/email.png">Email</a>
-            <a  class= " logo " href="#!" target="_blank"><img  class="redes" src="img/fb.png">Facebook</a>
-            <a  class= " logo " href="https://www.instagram.com/avellanatiendadecafe/" target="_blank"><img class="redes" src="img/ig.png">Instagram</a>
-        </div>
-        <div class=" fs logo logo__nombre no-margin centrar-texto">Copyright &copy; Avellana Coffe store 2022</div>
-        
-        
-
-  
-
-        <script src="js/modernizr.js"></script>
-    </footer>
     
 </body>
