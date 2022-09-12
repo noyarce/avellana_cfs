@@ -21,7 +21,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     
     <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
+
 </head>
 <body>
     <div class="eslogan">
@@ -39,233 +42,298 @@
     <main id ="producto" class="contenedor">    
        <h2 class="titulo centrar-texto mayuscula" >Tipos de Café</h2> 
       <div class="grid">
-                     
-            <div class="producto">
-                <a href="#cafecolombia" rel="noopener">
-                    <img class=" imag producto__imagen" src="img/cafe_bolsa_1.jpeg" alt="imagen café Avellana colombia ">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#cafecolombia" >Colombia</a></p>  
-                    </div> 
-                    <div class="informacion" id="cafecolombia">
-                        <div class="informacion-inner scroll">
-                            <h3>Café Colombia</h3>
-                            <img class=" imag producto__imagen" src="img/cafe_bolsa_1.jpeg" alt="imagen café Avellana colombia ">
-                            <p>
-                                Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
-                                Cosechado entre 1800 y 2000 msnm.
-                            </p>
-                            <a href="index.php#producto" class="button">cerrar</a>
-                        </div>
-                    </div>   
-                </a>
-            </div>  <!--.producto-->
+                <div class="producto">
+                    <div class="card producto__informacion">
+                        <img class=" imag producto__imagen" src="img/cafe_bolsa_1.jpeg" alt="imagen café Avellana colombia ">
+                        <button type=" button " class="btn color_titulo producto__nombre titulo_producto centrar-texto" data-bs-toggle="modal" data-bs-target="#cafecolombia">Colombia</button>
 
-            <div class="producto">
-                <a href="#caferuanda">
-                    <img class=" imag producto__imagen" src="img/cafe_bolsa_2.jpeg" alt="imagen café Avellana ruanda ">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#caferuanda" >Ruanda</a></p>  
-                    </div> 
-                    <div class="informacion" id="caferuanda">
-                        <div class="informacion-inner scroll">
-                            <h3>Café Ruanda</h3>
-                            <img class=" imag producto__imagen" src="img/cafe_bolsa_2.jpeg" alt="imagen café Avellana Ruanda ">
-                            <p>
-                                Café de grano en formato 250 grs, Con notas de sabor a té negro.cosechado entre 1650 y 1805 msnm.
-                            </p>
-                            <a href="index.php#producto" class="button">cerrar</a>
-                        </div>
-                    </div>   
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="#cafeguatemala">
-                    <img class=" imag producto__imagen" src="img/cafe_bolsa_3.jpeg" alt="imagen café Avellana guatemala ">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#cafeguatemala" >Guatemala</a></p>  
-                    </div> 
-                    <div class="informacion" id="cafeguatemala">
-                        <div class="informacion-inner scroll">
-                            <h3>Café Guatemala</h3>
-                            <img class=" imag producto__imagen" src="img/cafe_bolsa_2.jpeg" alt="imagen café Avellana guatemala ">
-                            <p>
-                                Café en grano en formato de 250 grs., con notas de sabor a caramelo, ciruela, chocolate amargo. Cosechado a 1380 msnm.
-                            </p>
-                            <a href="index.php#producto" class="button">cerrar</a>
-                        </div>
-                    </div>   
-                </a>
-            </div>  <!--.producto-->
-      </div>       
+                            <!-- Modal -->
+                            <div class="modal fade" id="cafecolombia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Café Colombia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <h3>Café Colombia</h3>
+                                        <img class=" imag producto__imagen" src="img/cafe_bolsa_1.jpeg" alt="imagen café Avellana colombia ">
+                                        <p>
+                                            Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
+                                            Cosechado entre 1800 y 2000 msnm.
+                                        </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn button" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div><!--.producto--> 
+                
+                
+
+                <div class="producto">
+                    <div class="card producto__informacion">
+                        <img class=" imag producto__imagen" src="img/cafe_bolsa_2.jpeg"  alt="imagen café Avellana colombia ">
+                        <button type=" button " class="btn color_titulo producto__nombre titulo_producto centrar-texto" data-bs-toggle="modal" data-bs-target="#caferuanda">Ruanda</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="caferuanda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Café Ruanda</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <h3>Café Ruanda</h3>
+                                        <img class=" imag producto__imagen" src="img/cafe_bolsa_2.jpeg" alt="imagen café Avellana Ruanda ">
+                                        <p>
+                                            Café de grano en formato 250 grs, Con notas de sabor a té negro.cosechado entre 1650 y 1805 msnm.
+                                        </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn button" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div><!--.producto-->    
+                
+                
+                <div class="producto">
+                    <div class="card producto__informacion">
+                        <img class=" imag producto__imagen" src="img/cafe_bolsa_3.jpeg"   alt="imagen café Avellana colombia ">
+                        <button type=" button " class="btn color_titulo producto__nombre titulo_producto centrar-texto" data-bs-toggle="modal" data-bs-target="#cafeguatemala">Guatemala</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="cafeguatemala" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Café Guatemala</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <h3>Café Guatemala</h3>
+                                        <img class=" imag producto__imagen" src="img/cafe_bolsa_2.jpeg" alt="imagen café Avellana guatemala ">
+                                        <p>
+                                            Café en grano en formato de 250 grs., con notas de sabor a caramelo, ciruela, chocolate amargo. Cosechado a 1380 msnm.
+                                        </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn button" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div><!--.producto-->    
+        </div>       
     </main>
 
-    <section id ="accesorio" class="contenedor">
-            <h2 class="titulo centrar-texto mayuscula">Accesorios</h2>
-            <div class="grid">
-                <div class="producto">
-                    <a href="#cafeteras">
-                        <img class=" imag producto__imagen" src="img/cafetera_1.jpeg" alt="imagen Accesorios Avellana ">
-                        <div class="producto__informacion">
-                            <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#cafeteras" >Cafeteras</a></p>  
-                        </div> 
-                        <div class="informacion" id="cafeteras">
-                            <div class="informacion-inner scroll">
-                                <h3>Cafeteras</h3>
-                                <img class=" imag producto__imagen" src="img/cafetera_1.jpeg" alt="imagen Accesorios Avellana ">
-                                <p>
-                                    Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
-                                    Cosechado entre 1800 y 2000 msnm.
-                                </p>
-                                <img class=" imag producto__imagen" src="img/cafetera_2.jpeg" alt="imagen Accesorios Avellana ">
-                                <p>
-                                    Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
-                                    Cosechado entre 1800 y 2000 msnm.
-                                </p>
-                                <a href="index.php#accesorio" class="button">cerrar</a>
+    <!--. Comienzo Accesorio-->
+
+<section id ="accesorio" class="contenedor">
+    <h2 class="titulo centrar-texto mayuscula">Accesorios</h2>
+        <div class="grid">
+            <div class="producto">  <!--accesorio 1 -->
+                <div class="card producto__informacion">
+                    <img class=" imag producto__imagen card-img-top" src="img/cafetera_1.jpeg"   alt="imagen Accesorios Avellana ">
+                    <button type=" button " class="btn color_titulo producto__nombre titulo_producto centrar-texto" data-bs-toggle="modal" data-bs-target="#cafetera">Cafeteras</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="cafetera" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Cafeteras</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Cafeteras</h3>
+                                    <img class=" imag producto__imagen" src="img/cafetera_1.jpeg" alt="imagen Accesorios Avellana ">
+                                    <p>
+                                        Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
+                                        Cosechado entre 1800 y 2000 msnm.
+                                    </p>
+                                    <img class=" imag producto__imagen" src="img/cafetera_2.jpeg" alt="imagen Accesorios Avellana ">
+                                    <p>
+                                        Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
+                                        cosechado entre 1800 y 2000 msnm.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn button" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
                             </div>
-                            
-                        </div>   
-                    </a>
-                </div>  <!--.accesorio-->
-                <div class="producto">
-                    <a href="#prensas">
-                        <img class=" imag producto__imagen" src="img/prensa_1.jpeg" alt="imagen Accesorios Avellana ">
-                        <div class="producto__informacion">
-                            <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#prensas" >Prensas</a></p>  
-                        </div> 
-                        <div class="informacion" id="prensas">
-                            <div class="informacion-inner scroll">
-                                <h3>Prensas</h3>
-                                <img class=" imag producto__imagen" src="img/prensa_1.jpeg" alt="imagen Accesorios Avellana ">
-                                <p>
-                                    Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
-                                    Cosechado entre 1800 y 2000 msnm.
-                                </p>
-                                <img class=" imag producto__imagen" src="img/prensa_2.jpeg" alt="imagen Accesorios Avellana ">
-                                <p>
-                                    Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
-                                    Cosechado entre 1800 y 2000 msnm.
-                                </p>
-                                <a href="index.php#accesorio" class="button">cerrar</a>
-                            </div>
-                            
-                        </div>   
-                    </a>
-                </div><!--.accesorio-->
-                <div class="producto">
-                    <a href="#shakers">
-                        <img class=" imag producto__imagen" src="img/shaker_1.jpeg" alt="imagen Accesorios Avellana ">
-                        <div class="producto__informacion">
-                            <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#shakers" >Shakers</a></p>  
-                        </div> 
-                        <div class="informacion" id="shakers">
-                            <div class="informacion-inner scroll">
-                                <h3>Shakers</h3>
-                                <img class=" imag producto__imagen" src="img/shaker_1.jpeg" alt="imagen Accesorios Avellana ">
-                                <p>
-                                    Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
-                                    Cosechado entre 1800 y 2000 msnm.
-                                </p>
-                                
-                                <a href="index.php#accesorio" class="button">cerrar</a>
-                            </div>
-                            
-                        </div>   
-                    </a>
+                        </div>
+                    </div> <!-- fin Modal 1 -->
                 </div>
-                    <div class="producto">
-                        <a href="#moledor">
-                            <img class=" imag producto__imagen" src="img/moledor.jpeg" alt="imagen Accesorios Avellana ">
-                            <div class="producto__informacion">
-                                <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#moledor" >Moledores</a></p>  
-                            </div> 
-                            <div class="informacion" id="moledor">
-                                <div class="informacion-inner scroll">
-                                    <h3>Moledor</h3>
-                                    <img class=" imag producto__imagen" src="img/moledor.jpeg" alt="imagen Accesorios Avellana ">
+            </div><!-- fin accesorio 1-->   
+
+
+            <div class="producto">  <!--accesorio 2 -->
+                <div class="card producto__informacion">
+                    <img class=" imag producto__imagen card-img-top" src="img/prensa_1.jpeg" alt="imagen Accesorios Avellana ">
+                    <button type=" button " class="btn color_titulo producto__nombre titulo_producto centrar-texto" data-bs-toggle="modal" data-bs-target="#prensa">Prensas</button>
+
+                    <!-- Modal 2 -->
+                    <div class="modal fade" id="prensa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Prensas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Cafeteras</h3>
+                                    <img class=" imag producto__imagen" src="img/prensa_1.jpeg" alt="imagen Accesorios Avellana ">
                                     <p>
                                         Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
                                         Cosechado entre 1800 y 2000 msnm.
                                     </p>
-                                    
-                                    <a href="index.php#accesorio" class="button">cerrar</a>
+                                    <img class=" imag producto__imagen" src="img/prensa_2.jpeg" alt="imagen Accesorios Avellana ">
+                                    <p>
+                                        Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
+                                        cosechado entre 1800 y 2000 msnm.
+                                    </p>
                                 </div>
-                                
-                            </div>   
-                        </a>
-                    </div><!--.accesorio-->
-                    <div class="producto">
-                        <a href="#tetera">
-                            <img class=" imag producto__imagen" src="img/tetera_1.jpeg" alt="imagen Accesorios Avellana ">
-                            <div class="producto__informacion">
-                                <p class="producto__nombre titulo_producto centrar-texto"><a class= "color_titulo" href="#tetera" >Teteras</a></p>  
-                            </div> 
-                            <div class="informacion" id="tetera">
-                                <div class="informacion-inner scroll">
-                                    <h3>Teteras</h3>
-                                    <img class=" imag producto__imagen" src="img/tetera_1.jpeg" alt="imagen Accesorios Avellana ">
+                                <div class="modal-footer">
+                                    <button type="button" class="btn button" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- fin Modal 2 -->
+                </div>
+            </div><!-- fin accesorio 2-->  
+           
+
+            <div class="producto">  <!--accesorio 3-->
+                <div class="card producto__informacion">
+                    <img class=" imag producto__imagen card-img-top" src="img/shaker_1.jpeg" alt="imagen Accesorios Avellana ">
+                    <button type=" button " class="btn color_titulo producto__nombre titulo_producto centrar-texto" data-bs-toggle="modal" data-bs-target="#shaker">Shakers</button>
+
+                    <!-- Modal 3 -->
+                    <div class="modal fade" id="shaker" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Shakers</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Shakers</h3>
+                                    <img class=" imag producto__imagen" src="img/shaker_1.jpeg" alt="imagen Accesorios Avellana ">
                                     <p>
                                         Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
                                         Cosechado entre 1800 y 2000 msnm.
                                     </p>
-                                    
-                                    <a href="index.php#accesorio" class="button">cerrar</a>
                                 </div>
-                                
-                            </div>   
-                        </a>
-                    </div><!--.accesorio-->
-             </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn button" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- fin Modal 3-->
+                </div>
+            </div><!-- fin accesorio 3-->  
+            
+            <div class="producto">
+
+<div class="card producto__informacion">
+        <img class=" imag producto__imagen card-img-top" src="img/moledor.jpeg"   alt="imagen Accesorios Avellana ">
+        <button type=" button " class="btn color_titulo producto__nombre titulo_producto centrar-texto" data-bs-toggle="modal" data-bs-target="#moledor">Moledores</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="moledor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Moledores</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <h3>Moledor</h3>
+                        <img class=" imag producto__imagen" src="img/moledor.jpeg" alt="imagen Accesorios Avellana ">
+                        <p>
+                            Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
+                            Cosechado entre 1800 y 2000 msnm.
+                        </p>
+                
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn button" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>           
+</div><!--.accesorio-->
+            <div class="producto">
+                <div class="card producto__informacion">
+                        <img class=" imag producto__imagen card-img-top" src="img/tetera_1.jpeg"  alt="imagen Accesorios Avellana ">
+                        <button type=" button " class="btn color_titulo producto__nombre titulo_producto centrar-texto" data-bs-toggle="modal" data-bs-target="#tetera">Teteras</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="tetera" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Teteras</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <h3>Teteras</h3>
+                                        <img class=" imag producto__imagen" src="img/tetera_1.jpeg" alt="imagen Accesorios Avellana ">
+                                        <p>
+                                            Café en grano en formato 250 grs, que te deja ricas notas de sabor a chocolate, toffee, membrillo.
+                                            Cosechado entre 1800 y 2000 msnm.
+                                        </p>
+                                    
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn button" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            </div><!--.accesorio-->
+
+        </div>   
     </section>
     
     <div>
         <h2 class="titulo centrar-texto mayuscula">Contáctanos</h2>  
     </div>
 
-   <section id="contacto" class="contenedor">   
+   <section id="contacto" class="forma">   
         <div class="contacto-bg"></div>
     
         <form class="formulario" action="correos.php" method="POST" autocomplete="off">
-            <div class="campo">
-                <label class="titulo_alternativo color_titulo campo__label"  for="nombre">Nombre</label>
-                <input 
-                    type="text" 
-                    class="campo__field titulo_alternativo "
-                    id="nombre"
-                    name = "nombre" 
-                    placeholder="Tu Nombre" 
-                    required 
-
-                >
+        <div class="mb-3 campo">
+                <label for="nombre" class=" titulo_alternativo form-label text-white titulo_alternativo campo__label" for="nombre">Nombre</label>
+                <input type="text" class="form-control campo__field titulo_alternativo " id="nombre"  placeholder="Ingrese su Nombre"  aria-describedby="Nombre" required>
             </div>
-            <div class="campo">
-                <label class="titulo_alternativo color_titulo  campo__label" for="email">E-mail</label>
-                <input 
-                    type="email" 
-                    class="campo__field titulo_alternativo "
-                    id="email"
-                    name="email"
-                    placeholder="Tu E-mail" 
-                    required
-                >
+            <div class="mb-3 campo">
+                <label for="correo" class=" titulo_alternativo form-label text-white titulo_alternativo campo__label" for="email">Correo electrónico</label>
+                <input type="email" class="titulo_alternativo form-control campo__field titulo_alternativo " id="email" name="email"  aria-describedby="correo electronico" placeholder="Ingrese su E-mail" required>
             </div>
-            <div class="campo">
-                <label class="titulo_alternativo color_titulo campo__label" for="mensaje">Mensaje</label>
-                <textarea 
-                    class="campo__field campo__field--textarea titulo_alternativo  "
-                    name="mensaje"
-                    id="mensaje"
-                    required
-                ></textarea>
+            <div class="mb-3 campo">
+                <label for="mensaje" class="form-label text-white titulo_alternativo campo__label">Mensaje</label>
+                <textarea class="form-control campo__field campo__field--textarea titulo_alternativo " name="mensaje" id="mensaje" rows="3" required></textarea>
             </div>
-    
-            <div class="campo">
-                <button type="submit" name = " submit" value="Enviar" class="boton boton--primario">enviar</button>
-            </div>
+            <button type="submit" name = " submit" value="Enviar" class="boton boton--primario ">Enviar</button>
         </form>
+
+
+
+
     </section>
    
 <?php  incluirTemplate('footer'); ?>
     
-    
+<script src="js/bootstrap.bundle.min.js"></script>  
 </body>

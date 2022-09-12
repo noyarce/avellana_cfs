@@ -199,27 +199,21 @@ img {
     font-family: var(--fuenteHeading);
     color: var(--blanco);
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border: .1rem solid var(--blanco);
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center center;
+    align-items: center center;
 }
 
-@media (min-width: 768px) {
-    .boton {
-        display: inline-block;
-
-    }
-}
 .boton:hover {
     cursor: pointer;
 }
@@ -246,21 +240,12 @@ img {
 
 
 
-/** Sobre Nosotros **/
-@media (min-width: 768px) {
-    .sobre-nosotros {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
-}
-
-
 
 /** Contacto **/
 .contacto-bg {
     
     background-image: linear-gradient(rgba(22, 114, 130,0.4),rgba(0, 0, 0,0.5)),url(../img/prueba.webp);
+    width: 100%;
     height: 60rem; 
     background-size: cover;
     background-repeat: no-repeat;
@@ -269,24 +254,31 @@ img {
 .formulario {
     margin: -55rem auto 0 auto;
     width: 95%;
-    padding: 5rem;
+    padding: 2rem;
 
 }
+
+@media (min-width: 768px) {
+    .forma{
+        width: min(90%, 120rem);
+        margin: 0 auto;
+        
+    }
+}
+
 .campo {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: var(--celeste);
     font-family: var(--fuenteParrafos);
-    display: flex;
-    margin-bottom: 2rem;
+    display: block;
+    margin-bottom: 1rem;
 }
 .campo__label {
-    font-size: 2.3rem;
-    flex: 0 0 9rem;
-    text-align: right;
-    padding-right: 2rem;
+    font-size: 1.8rem;
+    padding-right: 1rem;
 }
 .campo__field {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: var(--blanco);
     font-family: var(--fuenteParrafos);
     background-color: var(--verde_transparente);
@@ -294,7 +286,7 @@ img {
     border: 1px solid var(--blanco);
 }
 .campo__field--textarea {
-    height: 20rem;
+    height: 5rem;
 }
 
 textarea:focus, input:focus, input[type]:focus {
@@ -303,6 +295,8 @@ textarea:focus, input:focus, input[type]:focus {
     outline: 0 none;
 }
 
+
+
 .avellana{
     
     height: 15rem;
@@ -310,6 +304,11 @@ textarea:focus, input:focus, input[type]:focus {
     
     /*display: inline-block;*/
 }
+
+
+
+
+
 @media (min-width: 768px) {
     .avellana{
     
@@ -323,7 +322,7 @@ textarea:focus, input:focus, input[type]:focus {
 @media(min-width: 1024px){
     .avellana{
         height: 25rem;
-    width: 25rem;
+        width: 25rem;
     }
 }
 
@@ -332,12 +331,7 @@ textarea:focus, input:focus, input[type]:focus {
     height: 3rem;
     width: 3rem;
     vertical-align: middle;
-    margin-right:1rem;
-   
-
- 
-    
-    
+    margin-right:1rem;   
 }
 
 /*@media (min-width: 768px) {
@@ -364,9 +358,13 @@ textarea:focus, input:focus, input[type]:focus {
     display: grid;
     gap: 2rem;
 }
+
 @media (min-width: 768px) {
     .grid {
+        height: 100%;
+        height: 100%;
         grid-template-columns: repeat(2, 1fr);
+        
     }
 }
 

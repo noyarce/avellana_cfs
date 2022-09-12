@@ -2,7 +2,7 @@
         <div class="contenedor">
             
             <div class="barra">
-                <a class="logo" href="index.html" src="img/logo.png" alt="logo café Avellana">
+                <a class="logo" href="index.php" src="img/logo.png" alt="logo café Avellana">
                     
                     <h1 class="logo__bold no-margin centrar-texto">Avellana <span class="logo__nombre">Coffee Store</span></h1>
                 </a>
